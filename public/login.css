@@ -1,0 +1,67 @@
+body { 
+      	background: #f2f6fc; 
+      	color: rgba(0,0,0,0.87); 
+      	font-family: Roboto, Helvetica, Arial, sans-serif; 
+      	margin: 0; 
+      	padding: 0;
+      	-webkit-align-content: center;
+    	align-content: center; 
+      }
+      button{
+		width: 100px;
+		height: 50px;
+		border-radius:0;
+		font-size: 20px;
+		font-weight: 300px;	 
+		color: #6b6d70;     
+      }
+    #LoginPage { 
+    		margin: auto;
+      		padding: 20px 70px;
+    		background: #ffffff;	 
+    		border-radius: 3px;
+    		position: absolute;
+  			z-index: 15;
+  			top: 25%;
+  			left: 33%;
+  			border: 1px solid #a5a5a5;
+  			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+    	}
+    	#LoginPage h1{
+    		font-size: 24px; font-weight: 300;
+    		text-align: center;
+    		color: #a5a5a5;
+    	}
+    	#username{
+    		width: 400px;
+    		margin: 10px;
+			border: 1px solid #d2d5db;
+			-webkit-box-flex: 1;
+    		box-flex: 1;
+    		border-radius: 1px;
+    	}
+    	
+    	#username input{
+    		width: 340px;
+			height : 20px;
+			-webkit-box-flex: 1;
+    		box-flex: 1;
+    		border: 0 none;
+    		background: none;
+    		padding: 5px;
+    	}
+    	#username img{
+    		border: 0 none;
+    		border-right: 1px solid #d2d5db;
+    	}
+    	#button_box{
+    		width: 400px;
+    		margin: 10px;
+			border: none;
+			-webkit-box-flex: 1;
+    		box-flex: 1;
+    		border-radius: 1px;
+    	}
+    	#button_box button {
+    		margin: 5px 10px 5px 0px;
+    	}
