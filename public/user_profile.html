@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.1.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+	<link rel="stylesheet" href="masterfile.css">
+  </head>
+  <body>
+  		<div class="bg">
+    		<div class="content_body">
+    			<div class="header">
+					 <div style="float:right;padding:10px;padding-top:20px;">
+					 	<span>Welcome, Fawzia bin Shaahida</span>
+						<img src="icon/user_settings_icon_white_20.png" align="center" valign="center">
+						<a href="index.html"><img src="icon/logout_20.png" align="center" valign="center"></a>
+					</div> 
+    				<div style="float:left;padding:10px;padding-top:20px;">   
+    					
+    					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              				<img src="icon/activity_feed_white_20.png" align="left" valign="center">
+       		 			</a>
+        			</div>    			
+    			</div>
+    			<div class="content">
+					<h1>User List</h1> 
+					<table class="tableInfo">
+						<thead class="tableHeader">						
+							<tr>
+								<th>Username</th>
+								<th>Staff ID</th>
+								<th>Name</th>
+								<th>Status</th>
+								<th>Last Login</th>							
+							</tr>
+						</thead>
+						<tr>
+							<td>NORAISAH</td>
+							<td>102938</td>
+							<td>NORAISAH BTE MOHAMED</td>
+							<td><input type="checkbox" value=1 readonly=1 checked></td>
+							<td>16 Jul 2017 17:00:25 PM</td>					
+						</tr>
+						<tr>
+							<td>Hannah</td>
+							<td>102937</td>
+							<td>Hannah BTE MOHAMED</td>
+							<td><input type="checkbox" value=1 readonly=1 checked></td>
+							<td>15 Jul 2017 18:00:25 PM</td>					
+						</tr>
+						<tr>
+							<td>CHONGTSUIPING</td>
+							<td>102936</td>
+							<td>CHONG TSUI PING</td>
+							<td><input type="checkbox" value=1 readonly=1></td>
+							<td>01 Jan 2017 10:45:59 AM</td>					
+						</tr>
+						<tr>
+							<td>NURAZLIE</td>
+							<td>102935</td>
+							<td>NUR AZLIE BIN ASALAN</td>
+							<td><input type="checkbox" value=1 readonly=1 checked></td>
+							<td>16 Jul 2017 18:56:23 PM</td>					
+						</tr>
+						<tr>
+							<td>JUMINAH</td>
+							<td>102934</td>
+							<td>JUMINAH ASPAR</td>
+							<td><input type="checkbox" value=1 readonly=1 checked></td>
+							<td>16 Jul 2017 17:56:23 PM</td>					
+						</tr>
+						<tr>
+							<td>PATRICIA</td>
+							<td>102933</td>
+							<td>PATRICIA BTE JAPARSA</td>
+							<td><input type="checkbox" value=1 readonly=1></td>
+							<td>12 Jun 2017 18:00:09 PM</td>					
+						</tr>
+					</table>   			
+    			</div>
+    		</div>  	
+  			<div class="sidebar">
+    				<table border=0 style="padding:0px;height:55px;font-size:12px;color:#edeff2;">
+						<tr>
+							<td><img src="icon/company_logo.png" align="center" valign="center"></td>
+							<td valign="center" nowrap=0>Majlis Bandaraya Pulau Pinang</td>							
+						</tr>    				
+    				</table>
+    				<section id="menu">
+   	 					<ul>
+   	 						<li><a href="home.html"><img src="icon/home_20.png" align="center" valign="center"> Dashboard</a></li>
+							<li>
+								<img src="icon/masterfile_20.png" align="center"> Master File
+								<ul id="submenu">
+									<li>
+										<div style="padding:10px;" class="menu_hover"><a><img src="icon/users_black_16.png" align="center"> Users</a></div>
+										<ul id="sub_menu">
+												<li>Add User</li>
+												<li>Update User</li>										
+										</ul>									
+									</li>
+									<li><img src="icon/customer_16.png" align="center"> Customer</li>
+									<li><img src="icon/zone_16.png" align="center"> Location/Zone</li>
+									<li><img src="icon/parking_16.png" align="center"> Parking Lot</li>
+									<li><img src="icon/rate_16.png" align="center"> Parking Rate</li>
+								</ul>
+							</li>
+							<li><img src="icon/report_20.png" align="center"> Reports</li>   	 		
+   	 					</ul>
+   	 				</section>
+    		</div>
+    	</div>
+  </body>
+</html>
