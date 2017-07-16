@@ -8,7 +8,7 @@
       		font-family: Roboto, Helvetica, Arial, sans-serif; 
       		margin: 0; 
       		padding: 0;
-      	}
+      }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
       h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
       h1 { font-size: 30px; font-weight: 400px; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
@@ -47,7 +47,7 @@
 		   background: #242930;
       	   margin:0;
       	   height: 100%;
-      	   width: 20%;
+      	   width: 15%;
       	   border:none;
       	   color: white;
 	 }
@@ -56,7 +56,7 @@
      	  background: #f4f5f7;
       	   margin:0;
       	   height: 100%;
-      	   width: 80%;
+      	   width: 85%;
       	   float:right;
 	 }
 	 
@@ -145,14 +145,24 @@
        .tableInfo {
        		border: 1px solid #9e9e9e;
        		width: 100%;
+       		padding: 10px;
+       		margin:0;
+       		border-collapse: collapse;
+       		border: 1px solid #d6d7d8;
        }
        
        .tableHeader{
-       		background: rgb(76,76,76); /* Old browsers */
-			background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */       
-			color: #edeff2;
-			height: 30px;
-					
+       		background: #096ec1;      
+			color: #edeff2;	
+			border: 1px solid #d6d7d8;
+		}
+		
+		.tableHeader tr, .tablebody tr{
+			height:30px;
+			border-top: 1px solid #d6d7d8
+		}
+		
+		.tablebody td{
+			padding: 10px;
+			text-align:center;
 		}
