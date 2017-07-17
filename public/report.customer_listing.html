@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.1.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+	<!-- Bootstrap 3.3.6 -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="css/forms.min.css">
+	<!-- DataTables -->
+	<link rel="stylesheet" href="plugins/js/dataTables.bootstrap.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="masterfile.css">
+	
+	<style>
+	.piechart_legend li span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+	}
+	.piechart_legend ul {
+		list-style: none;
+	}
+	</style>
+  </head>
+  <body>
+  		<div class="bg">
+    		<div class="content_body">
+				<div class="header">
+					 <div style="float:right;padding:10px;padding-top:20px;">
+						<span>Welcome, Fawzia bin Shaahida</span>
+						<img src="icon/user_settings_icon_white_20.png" align="center" valign="center">
+						<a href="index.html"><img src="icon/logout_20.png" align="center" valign="center"></a>
+					</div> 
+					<div style="float:left;padding:10px;padding-top:15px;">   
+						<img src="icon/company_logo.png" align="center" valign="center">
+						<span style="font-size:20px;font-weight:bold;">Majlis Perbandaran Pulau Pinang</span>
+					</div>    			
+					</div>
+				<div class="bg">
+					<div class="content">
+						<div>
+							<h3>Customer Listing Report</h3>
+							<div class="box-body">
+								<strong>Zone:</strong>
+								<select name="zone">
+									<option value="" selected>-- All --</option>
+									<option value="1">Bayan Lepas</option>
+									<option value="2">George Town</option>
+									<option value="3">Batu Ferringhi</option>
+								</select>&nbsp;&nbsp;&nbsp;&nbsp;
+								<strong>Payment Status:</strong> &nbsp;
+									<input type="radio" name="payment_status" checked> All &nbsp;&nbsp;
+									<input type="radio" name="payment_status"> Paid &nbsp;&nbsp;
+									<input type="radio" name="payment_status"> Unpaid &nbsp;&nbsp;
+								</select>&nbsp;&nbsp;&nbsp;&nbsp;
+								<strong>Date Range:
+								From
+								<input type="text" size="8" name="date_from" value="2017-01-01">
+								To
+								<input type="text" size="8" name="date_to" value="2017-01-31">
+								</strong> 
+							</div>
+						</div>
+						<!-- Main content -->
+						<section>
+							<div>
+							<!-- /.box-header -->
+								<table id="sales_table" class="table table-bordered table-striped">
+									<thead>
+									<tr>
+									  <th>#</th>
+									  <th>ID</th>
+									  <th>Customer Name</th>
+									  <th>NRIC</th>
+									  <th>Balance <br />Amount (RM)</th>
+									  <th>Saman <br />Reference No.</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									  <td>1.</td>
+									  <td>11</td>
+									  <td>Ahmad</td>
+									  <td align="center">781212-54-8897</td>
+									  <td align="right">80.00</td>
+									  <td align="center">02478523450</td>
+									</tr>
+									<tr>
+									  <td>2.</td>
+									  <td>43</td>
+									  <td>Safiz</td>
+									  <td align="center">720412-33-8898</td>
+									  <td align="right">120.00</td>
+									  <td align="center">02478523451</td>
+									</tr>
+									<tr>
+									  <td>3.</td>
+									  <td>35</td>
+									  <td>Ali</td>
+									  <td align="center">780511-11-8899</td>
+									  <td align="right">430.00</td>
+									  <td align="center">02478523452</td>
+									</tr>
+									<tr>
+									  <td>4.</td>
+									  <td>77</td>
+									  <td>Tan Sooi Song</td>
+									  <td align="center">580203-02-0097</td>
+									  <td align="right">760.00</td>
+									  <td align="center">02478523453</td>
+									</tr>
+									<tr>
+									  <td>5.</td>
+									  <td>99</td>
+									  <td>Zaini</td>
+									  <td align="center">781230-35-1985</td>
+									  <td align="right">210.00</td>
+									  <td align="center">02478523454</td>
+									</tr>
+									<tr>
+									  <td>6.</td>
+									  <td>46</td>
+									  <td>Fadzilan</td>
+									  <td align="center">660403-07-7749</td>
+									  <td align="right">55.00</td>
+									  <td align="center">02478523455</td>
+									</tr>
+									<tr>
+									  <td>7.</td>
+									  <td>85</td>
+									  <td>Teoh Liu Liu</td>
+									  <td align="center">861110-35-4215</td>
+									  <td align="right">440.00</td>
+									  <td align="center">02478523456</td>
+									</tr>
+									<tr>
+									  <td>8.</td>
+									  <td>25</td>
+									  <td>Hisham</td>
+									  <td align="center">770506-77-9713</td>
+									  <td align="right">715.00</td>
+									  <td align="center">02478523457</td>
+									</tr>
+									<tr>
+									  <td>9.</td>
+									  <td>63</td>
+									  <td>Teh Kiang Chean</td>
+									  <td align="center">870201-07-4437</td>
+									  <td align="right">610.00</td>
+									  <td align="center">02478523458</td>
+									</tr>
+									<tr>
+									  <td>10.</td>
+									  <td>31</td>
+									  <td>Lee Choon Wei</td>
+									  <td align="center">670202-07-1122</td>
+									  <td align="right">115.00</td>
+									  <td align="center">02478523459</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									  <th colspan="4" align="right">Total</th>
+									  <td align="right"><b>3535.00</b></td>
+									  <td align="right">&nbsp;</td>
+									</tr>
+									</tfoot>
+								</table>
+							</div>
+					</div>
+					<div class="sidebar">
+						<section id="menu">
+							<ul>
+								<li><a href="home.html"><img src="icon/home_20.png" align="center" valign="center"> Dashboard</a></li>
+								<li>
+									<img src="icon/masterfile_20.png" align="center"> Master File
+									<ul id="submenu">
+										<li><a href="user_profile.html">Users</a></li>
+										<li>Customer</li>
+										<li><img src="icon/zone_16.png" align="center"> Location/Zone</li>
+										<li><img src="icon/parking_16.png" align="center"> Parking Lot</li>
+										<li><img src="icon/rate_16.png" align="center"> Parking Rate</li>
+										<li>Council Profile</li>
+									</ul>
+								</li>
+								<li><img src="icon/report_20.png" align="center"> Reports</li>
+								<ul id="submenu">
+									<li><a href="report.saman_listing.html">Saman Listing Report</a></li>	
+									<li><a href="report.parking_collection.html">Parking Collection Report</a></li>	
+									<li class="menu_hover"><a href="report.customer_listing.html">Customer Listing Report</a></li>	
+									<li style="padding-bottom:140px;"></li>
+								</ul>								
+							</ul>
+						</section>
+					</div>
+					</section>			
+    			</div>
+			</div>
+    	</div>
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- data tables -->
+<script src="plugins/js/jquery.dataTables.min.js"></script>
+<script src="plugins/js/dataTables.bootstrap.min.js"></script>
+<!-- ChartJS 1.0.1 -->
+<script src="plugins/js/Chart.min.js"></script>
+<!-- AdminLTE App -->
+<script src="plugins/js/app.min.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+	/* Pagination setup
+	 * ----------------
+	*/
+	
+	$('#sales_table').DataTable({
+      "paging": true,
+      "lengthChange": true,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
+  </body>
+</html>

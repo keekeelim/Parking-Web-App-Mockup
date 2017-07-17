@@ -41,300 +41,278 @@
   <body>
   		<div class="bg">
     		<div class="content_body">
-    			<div class="header">
+				<div class="header">
 					 <div style="float:right;padding:10px;padding-top:20px;">
-					 	<span>Welcome, Fawzia bin Shaahida</span>
+						<span>Welcome, Fawzia bin Shaahida</span>
 						<img src="icon/user_settings_icon_white_20.png" align="center" valign="center">
 						<a href="index.html"><img src="icon/logout_20.png" align="center" valign="center"></a>
 					</div> 
-    				<div style="float:left;padding:10px;padding-top:20px;">   
-    					
-    					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              				<img src="icon/activity_feed_white_20.png" align="left" valign="center">
-       		 			</a>
-        			</div>    			
-    			</div>
-    			<div class="content">
-					<div>
-						<h3>Saman Listing Report</h3>
-						<div class="box-body">
-							<strong>Zone:</strong>
-							<select name="zone">
-								<option value="" selected>-- All --</option>
-								<option value="1">Bayan Lepas</option>
-								<option value="2">George Town</option>
-								<option value="3">Batu Ferringhi</option>
-							</select>&nbsp;&nbsp;&nbsp;&nbsp;
-							<strong>Payment Status:</strong> &nbsp;
-								<input type="radio" name="payment_status" checked> All &nbsp;&nbsp;
-								<input type="radio" name="payment_status"> Paid &nbsp;&nbsp;
-								<input type="radio" name="payment_status"> Unpaid &nbsp;&nbsp;
-							</select>&nbsp;&nbsp;&nbsp;&nbsp;
-							<strong>Date Range:
-							From
-							<input type="text" size="8" name="date_from" value="2017-01-01">
-							To
-							<input type="text" size="8" name="date_to" value="2017-01-31">
-							</strong> 
-						</div>
+					<div style="float:left;padding:10px;padding-top:15px;">   
+						<img src="icon/company_logo.png" align="center" valign="center">
+						<span style="font-size:20px;font-weight:bold;">Majlis Perbandaran Pulau Pinang</span>
+					</div>    			
 					</div>
-					<!-- Main content -->
-					<section class="content">
+				<div class="bg">
+					<div class="content">
 						<div>
-						<!-- /.box-header -->
-							<table id="sales_table" class="table table-bordered table-striped">
-								<thead>
-								<tr>
-								  <th>#</th>
-								  <th>Saman Date</th>
-								  <th>Zone</th>
-								  <th>Car Plate No.</th>
-								  <th>Customer Name</th>
-								  <th>NRIC</th>
-								  <th>Saman Reference No.</th>
-								  <th>Saman Status</th>
-								  <th>Amount (RM)</th>
-								  <th>GST (RM)</th>
-								  <th>Amount Incl.<br />GST (RM)</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-								  <td>1.</td>
-								  <td>2017-01-02</td>
-								  <td>George Town</td>
-								  <td>PLL 5483</td>
-								  <td>Ahmad</td>
-								  <td align="right">781212-54-8897</td>
-								  <td align="right">02478523450</td>
-								  <td align="center"><font color="green"><strong>Paid</strong></font></td>
-								  <td align="right">18.87</td>
-								  <td align="right">1.13</td>
-								  <td align="right">20.00</td>
-								</tr>
-								<tr>
-								  <td>2.</td>
-								  <td>2017-01-03</td>
-								  <td>Bayan Lepas</td>
-								  <td>PAL 1484</td>
-								  <td>Safiz</td>
-								  <td align="right">720412-33-8898</td>
-								  <td align="right">02478523451</td>
-								  <td align="center"><font color="green"><strong>Paid</strong></font></td>
-								  <td align="right">18.87</td>
-								  <td align="right">1.13</td>
-								  <td align="right">20.00</td>
-								</tr>
-								<tr>
-								  <td>3.</td>
-								  <td>2017-01-04</td>
-								  <td>Batu Ferringhi</td>
-								  <td>PKK 1568</td>
-								  <td>Ali</td>
-								  <td align="right">780511-11-8899</td>
-								  <td align="right">02478523452</td>
-								  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
-								  <td align="right">28.30</td>
-								  <td align="right">1.70</td>
-								  <td align="right">30.00</td>
-								</tr>
-								<tr>
-								  <td>4.</td>
-								  <td>2017-01-07</td>
-								  <td>Bayan Lepas</td>
-								  <td>WZA 5566</td>
-								  <td>Tan Sooi Song</td>
-								  <td align="right">580203-02-0097</td>
-								  <td align="right">02478523453</td>
-								  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
-								  <td align="right">56.60</td>
-								  <td align="right">3.40</td>
-								  <td align="right">60.00</td>
-								</tr>
-								<tr>
-								  <td>5.</td>
-								  <td>2017-01-09</td>
-								  <td>George Town</td>
-								  <td>PMJ 7935</td>
-								  <td>Zaini</td>
-								  <td align="right">781230-35-1985</td>
-								  <td align="right">02478523454</td>
-								  <td align="center"><font color="green"><strong>Paid</strong></font></td>
-								  <td align="right">18.87</td>
-								  <td align="right">1.13</td>
-								  <td align="right">20.00</td>
-								</tr>
-								<tr>
-								  <td>6.</td>
-								  <td>2017-01-16</td>
-								  <td>Bayan Lepas</td>
-								  <td>WA 9876 A</td>
-								  <td>Fadzilan</td>
-								  <td align="right">660403-07-7749</td>
-								  <td align="right">02478523455</td>
-								  <td align="center"><font color="green"><strong>Paid</strong></font></td>
-								  <td align="right">14.15</td>
-								  <td align="right">0.85</td>
-								  <td align="right">15.00</td>
-								</tr>
-								<tr>
-								  <td>7.</td>
-								  <td>2017-01-19</td>
-								  <td>Batu Ferringhi</td>
-								  <td>PMJ 8374</td>
-								  <td>Teoh Liu Liu</td>
-								  <td align="right">861110-35-4215</td>
-								  <td align="right">02478523456</td>
-								  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
-								  <td align="right">37.74</td>
-								  <td align="right">2.26</td>
-								  <td align="right">40.00</td>
-								</tr>
-								<tr>
-								  <td>8.</td>
-								  <td>2017-01-23</td>
-								  <td>George Town</td>
-								  <td>KKR 4572</td>
-								  <td>Hisham</td>
-								  <td align="right">770506-77-9713</td>
-								  <td align="right">02478523457</td>
-								  <td align="center"><font color="green"><strong>Paid</strong></font></td>
-								  <td align="right">14.15</td>
-								  <td align="right">0.85</td>
-								  <td align="right">15.00</td>
-								</tr>
-								<tr>
-								  <td>9.</td>
-								  <td>2017-01-23</td>
-								  <td>George Town</td>
-								  <td>PMA 8491</td>
-								  <td>Teh Kiang Chean</td>
-								  <td align="right">870201-07-4437</td>
-								  <td align="right">02478523458</td>
-								  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
-								  <td align="right">56.60</td>
-								  <td align="right">3.40</td>
-								  <td align="right">60.00</td>
-								</tr>
-								<tr>
-								  <td>10.</td>
-								  <td>2017-01-30</td>
-								  <td>Batu Ferringhi</td>
-								  <td>PKK 1568</td>
-								  <td>Lee Choon Wei</td>
-								  <td align="right">670202-07-1122</td>
-								  <td align="right">02478523459</td>
-								  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
-								  <td align="right">14.15</td>
-								  <td align="right">0.85</td>
-								  <td align="right">15.00</td>
-								</tr>
-								</tbody>
-								<tfoot>
-								<tr>
-								  <th colspan="8" align="right">Total</th>
-								  <td align="right"><b>278.30</b></td>
-								  <td align="right"><b>16.70</b></td>
-								  <td align="right"><b>295.00</b></td>
-								</tr>
-								</tfoot>
-							</table>
-						</div>
-						<!-- /.box-body -->
-						<div class="col-md-6">
-						  <!-- LINE CHART -->
-						  <div class="box box-info">
-							<div class="box-header with-border">
-							  <h3 class="box-title">Donut Chart (Showing in Amount Incl. GST)</h3>
-
-							  <div class="box-tools pull-right">
-								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-								</button>
-								<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-							  </div>
-							</div>
+							<h3>Saman Listing Report</h3>
 							<div class="box-body">
-							  <div class="chart">
-								<canvas id="pieChart" style="height:250px"></canvas>
-							  </div>
-							  <div id="piechart_legend" class="piechart_legend"></div>
+								<strong>Zone:</strong>
+								<select name="zone">
+									<option value="" selected>-- All --</option>
+									<option value="1">Bayan Lepas</option>
+									<option value="2">George Town</option>
+									<option value="3">Batu Ferringhi</option>
+								</select>&nbsp;&nbsp;&nbsp;&nbsp;
+								<strong>Payment Status:</strong> &nbsp;
+									<input type="radio" name="payment_status" checked> All &nbsp;&nbsp;
+									<input type="radio" name="payment_status"> Paid &nbsp;&nbsp;
+									<input type="radio" name="payment_status"> Unpaid &nbsp;&nbsp;
+								</select>&nbsp;&nbsp;&nbsp;&nbsp;
+								<strong>Date Range:
+								From
+								<input type="text" size="8" name="date_from" value="2017-01-01">
+								To
+								<input type="text" size="8" name="date_to" value="2017-01-31">
+								</strong> 
+							</div>
+						</div>
+						<!-- Main content -->
+						<section>
+							<div>
+							<!-- /.box-header -->
+								<table id="sales_table" class="table table-bordered table-striped">
+									<thead>
+									<tr>
+									  <th>#</th>
+									  <th>Saman Date</th>
+									  <th>Zone</th>
+									  <th>Car Plate No.</th>
+									  <th>Customer Name</th>
+									  <th>NRIC</th>
+									  <th>Saman Reference No.</th>
+									  <th>Saman Status</th>
+									  <th>Amount (RM)</th>
+									  <th>GST (RM)</th>
+									  <th>Amount Incl.<br />GST (RM)</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									  <td>1.</td>
+									  <td>2017-01-02</td>
+									  <td>George Town</td>
+									  <td>PLL 5483</td>
+									  <td>Ahmad</td>
+									  <td align="center">781212-54-8897</td>
+									  <td align="center">02478523450</td>
+									  <td align="center"><font color="green"><strong>Paid</strong></font></td>
+									  <td align="right">18.87</td>
+									  <td align="right">1.13</td>
+									  <td align="right">20.00</td>
+									</tr>
+									<tr>
+									  <td>2.</td>
+									  <td>2017-01-03</td>
+									  <td>Bayan Lepas</td>
+									  <td>PAL 1484</td>
+									  <td>Safiz</td>
+									  <td align="center">720412-33-8898</td>
+									  <td align="center">02478523451</td>
+									  <td align="center"><font color="green"><strong>Paid</strong></font></td>
+									  <td align="right">18.87</td>
+									  <td align="right">1.13</td>
+									  <td align="right">20.00</td>
+									</tr>
+									<tr>
+									  <td>3.</td>
+									  <td>2017-01-04</td>
+									  <td>Batu Ferringhi</td>
+									  <td>PKK 1568</td>
+									  <td>Ali</td>
+									  <td align="center">780511-11-8899</td>
+									  <td align="center">02478523452</td>
+									  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
+									  <td align="right">28.30</td>
+									  <td align="right">1.70</td>
+									  <td align="right">30.00</td>
+									</tr>
+									<tr>
+									  <td>4.</td>
+									  <td>2017-01-07</td>
+									  <td>Bayan Lepas</td>
+									  <td>WZA 5566</td>
+									  <td>Tan Sooi Song</td>
+									  <td align="center">580203-02-0097</td>
+									  <td align="center">02478523453</td>
+									  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
+									  <td align="right">56.60</td>
+									  <td align="right">3.40</td>
+									  <td align="right">60.00</td>
+									</tr>
+									<tr>
+									  <td>5.</td>
+									  <td>2017-01-09</td>
+									  <td>George Town</td>
+									  <td>PMJ 7935</td>
+									  <td>Zaini</td>
+									  <td align="center">781230-35-1985</td>
+									  <td align="center">02478523454</td>
+									  <td align="center"><font color="green"><strong>Paid</strong></font></td>
+									  <td align="right">18.87</td>
+									  <td align="right">1.13</td>
+									  <td align="right">20.00</td>
+									</tr>
+									<tr>
+									  <td>6.</td>
+									  <td>2017-01-16</td>
+									  <td>Bayan Lepas</td>
+									  <td>WA 9876 A</td>
+									  <td>Fadzilan</td>
+									  <td align="center">660403-07-7749</td>
+									  <td align="center">02478523455</td>
+									  <td align="center"><font color="green"><strong>Paid</strong></font></td>
+									  <td align="right">14.15</td>
+									  <td align="right">0.85</td>
+									  <td align="right">15.00</td>
+									</tr>
+									<tr>
+									  <td>7.</td>
+									  <td>2017-01-19</td>
+									  <td>Batu Ferringhi</td>
+									  <td>PMJ 8374</td>
+									  <td>Teoh Liu Liu</td>
+									  <td align="center">861110-35-4215</td>
+									  <td align="center">02478523456</td>
+									  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
+									  <td align="right">37.74</td>
+									  <td align="right">2.26</td>
+									  <td align="right">40.00</td>
+									</tr>
+									<tr>
+									  <td>8.</td>
+									  <td>2017-01-23</td>
+									  <td>George Town</td>
+									  <td>KKR 4572</td>
+									  <td>Hisham</td>
+									  <td align="center">770506-77-9713</td>
+									  <td align="center">02478523457</td>
+									  <td align="center"><font color="green"><strong>Paid</strong></font></td>
+									  <td align="right">14.15</td>
+									  <td align="right">0.85</td>
+									  <td align="right">15.00</td>
+									</tr>
+									<tr>
+									  <td>9.</td>
+									  <td>2017-01-23</td>
+									  <td>George Town</td>
+									  <td>PMA 8491</td>
+									  <td>Teh Kiang Chean</td>
+									  <td align="center">870201-07-4437</td>
+									  <td align="center">02478523458</td>
+									  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
+									  <td align="right">56.60</td>
+									  <td align="right">3.40</td>
+									  <td align="right">60.00</td>
+									</tr>
+									<tr>
+									  <td>10.</td>
+									  <td>2017-01-30</td>
+									  <td>Batu Ferringhi</td>
+									  <td>PKK 1568</td>
+									  <td>Lee Choon Wei</td>
+									  <td align="center">670202-07-1122</td>
+									  <td align="center">02478523459</td>
+									  <td align="center"><font color="red"><strong>Unpaid</strong></font></td>
+									  <td align="right">14.15</td>
+									  <td align="right">0.85</td>
+									  <td align="right">15.00</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									  <th colspan="8" align="right">Total</th>
+									  <td align="right"><b>278.30</b></td>
+									  <td align="right"><b>16.70</b></td>
+									  <td align="right"><b>295.00</b></td>
+									</tr>
+									</tfoot>
+								</table>
 							</div>
 							<!-- /.box-body -->
-						  </div>
-						  <!-- /.box -->
-						</div>
-						<div class="col-md-6">
-						  <!-- BAR CHART -->
-						  <div class="box box-success">
-							<div class="box-header with-border">
-							  <h3 class="box-title">Bar Chart (Showing in Amount Incl. GST)</h3>
+							<div class="col-md-6">
+							  <!-- LINE CHART -->
+							  <div class="box box-info">
+								<div class="box-header with-border">
+								  <h3 class="box-title">Donut Chart (Showing in Amount Incl. GST)</h3>
 
-							  <div class="box-tools pull-right">
-								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-								</button>
-								<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+								  <div class="box-tools pull-right">
+									<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+									</button>
+									<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+								  </div>
+								</div>
+								<div class="box-body">
+								  <div class="chart">
+									<canvas id="pieChart" style="height:250px"></canvas>
+								  </div>
+								  <div id="piechart_legend" class="piechart_legend"></div>
+								</div>
+								<!-- /.box-body -->
 							  </div>
+							  <!-- /.box -->
 							</div>
-							<div class="box-body">
-							  <div class="chart">
-								<canvas id="barChart" style="height:230px"></canvas>
+							<div class="col-md-6">
+							  <!-- BAR CHART -->
+							  <div class="box box-success">
+								<div class="box-header with-border">
+								  <h3 class="box-title">Bar Chart (Showing in Amount Incl. GST)</h3>
+
+								  <div class="box-tools pull-right">
+									<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+									</button>
+									<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+								  </div>
+								</div>
+								<div class="box-body">
+								  <div class="chart">
+									<canvas id="barChart" style="height:230px"></canvas>
+								  </div>
+								</div>
+								<!-- /.box-body -->
 							  </div>
+							  <!-- /.box -->
 							</div>
-							<!-- /.box-body -->
-						  </div>
-						  <!-- /.box -->
-
-						</div>
-						<!-- /.col (RIGHT) -->
-					  </div>
-					  <!-- /.row -->
-
-					</section>			
-    			</div>	
-  			<div class="sidebar">
-    				<table border=0 style="padding:0px;height:55px;font-size:12px;color:#edeff2;">
-						<tr>
-							<td><img src="icon/company_logo.png" align="center" valign="center"></td>
-							<td valign="center" nowrap=0>Majlis Bandaraya Pulau Pinang</td>							
-						</tr>    				
-    				</table>
-    				<section id="menu">
-   	 					<ul>
-   	 						<li><a href="home.html"><img src="icon/home_20.png" align="center" valign="center"> Dashboard</a></li>
-							<li>
-								<img src="icon/masterfile_20.png" align="center"> Master File
+							<!-- /.col (RIGHT) -->
+					</div>
+					<div class="sidebar">
+						<section id="menu">
+							<ul>
+								<li><a href="home.html"><img src="icon/home_20.png" align="center" valign="center"> Dashboard</a></li>
+								<li>
+									<img src="icon/masterfile_20.png" align="center"> Master File
+									<ul id="submenu">
+										<li><a href="user_profile.html">Users</a></li>
+										<li>Customer</li>
+										<li><img src="icon/zone_16.png" align="center"> Location/Zone</li>
+										<li><img src="icon/parking_16.png" align="center"> Parking Lot</li>
+										<li><img src="icon/rate_16.png" align="center"> Parking Rate</li>
+										<li>Council Profile</li>
+									</ul>
+								</li>
+								<li><img src="icon/report_20.png" align="center"> Reports</li>
 								<ul id="submenu">
-									<li><img src="icon/users_black_16.png" align="center"> User</li>
-									<li><img src="icon/customer_16.png" align="center"> Customer</li>
-									<li><img src="icon/zone_16.png" align="center"> Location/Zone</li>
-									<li><img src="icon/parking_16.png" align="center"> Parking Lot</li>
-									<li><img src="icon/rate_16.png" align="center"> Parking Rate</li>
-								</ul>
-							</li>
-							<li><img src="icon/report_20.png" align="center"> Reports</li>   
-							<ul id="submenu">
-								<li>Parking Collection Report</li>	
-								<li><div style="padding:10px;" class="menu_hover">Saman Listing Report</div></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
+									<li class="menu_hover"><a href="report.saman_listing.html">Saman Listing Report</a></li>	
+									<li><a href="report.parking_collection.html">Parking Collection Report</a></li>	
+									<li><a href="report.customer_listing.html">Customer Listing Report</a></li>	
+									<li style="padding-bottom:700px;"></li>
+								</ul>								
 							</ul>
-   	 					</ul>
-   	 				</section>
-    		</div>
+						</section>
+					</div>
+					</section>			
+    			</div>
+			</div>
     	</div>
 <!-- jQuery 2.2.3 -->
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
